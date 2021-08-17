@@ -106,8 +106,8 @@ class DataController extends Controller
 
 
             } else {
-                Log::warning('Invalid request');
-                return response()->json('Invalid request', 400);
+                Log::warning('Record not found');
+                return response()->json('Record not found', 404);
             }
 
         } else {
